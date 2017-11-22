@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -296,9 +297,59 @@ namespace OOP
                                                                 new MyPoint{p1 = 3, p2 = 2}
                                                             };
             this.dataGridView3.DataSource = mylist;
+            //================================================================
+            List<ClsBanking> BankingList = new List<ClsBanking>();
+            BankingList.Add(new ClsBanking { Balance = 1000, P2 = 1, P3 = 2 });
+            BankingList.Add(new ClsBanking { Balance = 10040, P2 = 1, P3 = 2 });
+            BankingList.Add(new ClsBanking { Balance = 10400, P2 = 1, P3 = 2 });
+            BankingList.Add(new ClsBanking { Balance = 10400, P2 = 1, P3 = 2 });
 
+            this.dataGridView3.DataSource = BankingList;
 
+        }
 
+        private void button25_Click(object sender, EventArgs e)
+        {
+            //static method=================================
+            File.Copy("a.txt"," a1.txt", true);
+            //instance method
+            FileInfo f = new FileInfo("b.txt");
+            MessageBox.Show(f.CreationTime+"\n"+f.FullName+"\n"+f.Extension);
+            f.CopyTo("b1.txt", true);
+        }
+
+        private void button26_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(SystemInformation.ComputerName);
+        }
+
+        private void button23_Click(object sender, EventArgs e)
+        {
+            //static class Math
+            //static class File
+            int n = Math.Abs(-100);
+            MessageBox.Show(n.ToString());
+        }
+
+        private void button24_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(ClsBanking.InterestRate.ToString());
+        }
+
+        private void button42_Click(object sender, EventArgs e)
+        {
+            //FrmOOP.ActiveForm//後面接靜態方法
+            
+            this.Text = this.textBox2.Text;
+        }
+
+        private void button43_Click(object sender, EventArgs e)
+        {
+            FrmOOP f = new FrmOOP();
+            f.Text = "hello分身" + textBox2.Text;
+            f.Show();
+
+            FrmOOP.ActiveForm.Text = "hello分身" + textBox2.Text;
         }
     }
     class MyPoint

@@ -88,6 +88,15 @@ namespace OOP
         }
 
         //ReadOnly Property
+        public static double InterestRate
+        {
+            get
+            {
+                // code
+                return 3.5;
+            }
+        }
+
         public int P1
         {
             get

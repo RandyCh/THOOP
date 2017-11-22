@@ -94,6 +94,7 @@
             this.button16 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.label10 = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.button41 = new System.Windows.Forms.Button();
@@ -107,6 +108,9 @@
             this.button21 = new System.Windows.Forms.Button();
             this.button22 = new System.Windows.Forms.Button();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.label11 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.button42 = new System.Windows.Forms.Button();
             this.button24 = new System.Windows.Forms.Button();
             this.button23 = new System.Windows.Forms.Button();
             this.button25 = new System.Windows.Forms.Button();
@@ -140,7 +144,7 @@
             this.productsTableAdapter = new OOP.NorthwindDataSetTableAdapters.ProductsTableAdapter();
             this.tableAdapterManager = new OOP.NorthwindDataSetTableAdapters.TableAdapterManager();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.button43 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -159,6 +163,7 @@
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.tabPage5.SuspendLayout();
@@ -167,7 +172,6 @@
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.tabPage7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -363,7 +367,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1093, 386);
+            this.tabPage1.Size = new System.Drawing.Size(1237, 386);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Property";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -739,7 +743,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1093, 386);
+            this.tabPage2.Size = new System.Drawing.Size(1237, 386);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Method";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -770,7 +774,7 @@
             this.tabPage3.Controls.Add(this.button15);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1093, 386);
+            this.tabPage3.Size = new System.Drawing.Size(1237, 386);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Overloads";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -813,6 +817,15 @@
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Constructor / Destructor";
             this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Location = new System.Drawing.Point(858, 63);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.RowTemplate.Height = 24;
+            this.dataGridView3.Size = new System.Drawing.Size(304, 196);
+            this.dataGridView3.TabIndex = 15;
             // 
             // label10
             // 
@@ -944,16 +957,46 @@
             // 
             // tabPage5
             // 
+            this.tabPage5.Controls.Add(this.button43);
+            this.tabPage5.Controls.Add(this.label11);
+            this.tabPage5.Controls.Add(this.textBox2);
+            this.tabPage5.Controls.Add(this.button42);
             this.tabPage5.Controls.Add(this.button24);
             this.tabPage5.Controls.Add(this.button23);
             this.tabPage5.Controls.Add(this.button25);
             this.tabPage5.Controls.Add(this.button26);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(1093, 386);
+            this.tabPage5.Size = new System.Drawing.Size(1237, 386);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Static";
             this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(307, 39);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(38, 12);
+            this.label11.TabIndex = 10;
+            this.label11.Text = "name:";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(368, 36);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 22);
+            this.textBox2.TabIndex = 9;
+            // 
+            // button42
+            // 
+            this.button42.Location = new System.Drawing.Point(488, 34);
+            this.button42.Name = "button42";
+            this.button42.Size = new System.Drawing.Size(75, 23);
+            this.button42.TabIndex = 8;
+            this.button42.Text = "hello";
+            this.button42.UseVisualStyleBackColor = true;
+            this.button42.Click += new System.EventHandler(this.button42_Click);
             // 
             // button24
             // 
@@ -964,6 +1007,7 @@
             this.button24.TabIndex = 7;
             this.button24.Text = "InterestRate";
             this.button24.UseVisualStyleBackColor = true;
+            this.button24.Click += new System.EventHandler(this.button24_Click);
             // 
             // button23
             // 
@@ -974,6 +1018,7 @@
             this.button23.TabIndex = 6;
             this.button23.Text = "Static Class";
             this.button23.UseVisualStyleBackColor = true;
+            this.button23.Click += new System.EventHandler(this.button23_Click);
             // 
             // button25
             // 
@@ -984,6 +1029,7 @@
             this.button25.TabIndex = 5;
             this.button25.Text = "Static  Method";
             this.button25.UseVisualStyleBackColor = true;
+            this.button25.Click += new System.EventHandler(this.button25_Click);
             // 
             // button26
             // 
@@ -994,6 +1040,7 @@
             this.button26.TabIndex = 4;
             this.button26.Text = "Static Property";
             this.button26.UseVisualStyleBackColor = true;
+            this.button26.Click += new System.EventHandler(this.button26_Click);
             // 
             // tabPage6
             // 
@@ -1006,7 +1053,7 @@
             this.tabPage6.Controls.Add(this.button40);
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(1093, 386);
+            this.tabPage6.Size = new System.Drawing.Size(1237, 386);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "繼承多型";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -1203,7 +1250,7 @@
             this.tabPage7.Controls.Add(this.button56);
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(1093, 386);
+            this.tabPage7.Size = new System.Drawing.Size(1237, 386);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "Others";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -1293,14 +1340,15 @@
             this.timer1.Interval = 5;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // dataGridView3
+            // button43
             // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(858, 74);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.RowTemplate.Height = 24;
-            this.dataGridView3.Size = new System.Drawing.Size(304, 196);
-            this.dataGridView3.TabIndex = 15;
+            this.button43.Location = new System.Drawing.Point(488, 83);
+            this.button43.Name = "button43";
+            this.button43.Size = new System.Drawing.Size(75, 23);
+            this.button43.TabIndex = 11;
+            this.button43.Text = "button43";
+            this.button43.UseVisualStyleBackColor = true;
+            this.button43.Click += new System.EventHandler(this.button43_Click);
             // 
             // FrmOOP
             // 
@@ -1335,17 +1383,18 @@
             this.tabPage3.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
             this.tabPage6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.tabPage7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1462,6 +1511,10 @@
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button button42;
+        private System.Windows.Forms.Button button43;
     }
 }
 
